@@ -11,6 +11,9 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css" />
 
     <title>Portfolio</title>
@@ -19,7 +22,7 @@
 
     <nav id="navbar-example2" class="navbar navbar-expand-lg px-3 mb-3">
         <div class="container-fluid">
-          <a class="navbar-brand " href="https://experionglobal.com/" target="_blank">Experion</a>
+          <a class="navbar-brand " href="https://experionglobal.com/" target="_blank">Portfolio</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -32,21 +35,21 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 myNavBarList">
               <li class="nav-item">
                 <a class="nav-link " aria-current="page" href="#myBanner">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#skills">skills</a>
+                <a class="nav-link" href="#skills">Skills</a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" href="./hobbies.html">hobbies</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="#myProjectsTop">Projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#myProjectsTop">projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#myFooter">contact</a>
+                <a class="nav-link" href="#myFooter">Contact</a>
               </li>
             </ul>
           </div>
@@ -55,24 +58,33 @@
     
     <section id="myBanner" class="container my-5">
       <div class=" row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 shadow-lg">
-        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3 d-md-flex justify-content-md-center">
+        <div id="myImageDiv" class="col-lg-7 p-3 p-lg-5 pt-lg-3 d-md-flex justify-content-md-center">
           <img src="./images/myPic.png" alt="">
         </div>
-        <div class="col-lg-5 p-3 p-lg-5 pt-lg-3">
-          <h1>Vijin <br>Robinson</h1>
+        <div class="col-lg-5 p-3 p-lg-5 pt-lg-3 " id="myAboutDiv">
+          <h1>Vijin <br>Robins<span id="nameSpanO">o</span>n</h1>
         <h2>Software Engineer</h2>
-        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia</p>
+        <p>A highly motivated and goal-oriented engineering graduate
+          passionate about both hardware and software development. In the
+          pursuit of platforms to excel in and eager to apply technical skills
+          and knowledge in either or both domain and to contribute to
+          innovative projects.</p>
         </div>
         
       </div>
     </section>
 
     <section id="skills" class="pt-5">
-      <h1 style="text-align: center;" class="pb-5">What I Am Good At</h1>
-      <div class="container marketing">
+      <div id="skillsHeading" class="container">
+        <h1 style="text-align: center;" class="p-5 m-0">What I Am Good At</h1>
+      </div>
+      
+      <div class="container marketing pt-5">
         <!-- Three columns of text below the carousel -->
         <div class="row">
           <div class="col-lg-4">
+
+            
             <div class="container d-flex align-content-center justify-content-center w-75">
               <div  class="progressCircleOuter">
                   <div class="progressCircleInner">
@@ -148,11 +160,13 @@
       </div>
     </section>
 
-    <section id="myProjects" class="container">
-      <h1>Projects</h1>
+    <section id="myProjects" class="container ">
+      <div id="myProjectssHeading" class="container">
+        <h1 style="text-align: center;" class="p-5 m-0">What I Have Created</h1>
+      </div>
       <div
         id="myProjectsTop"
-        class="row g-4 py-5 row-cols-xxl-3 row-cols-lg-3 justify-content-center gap-5 gap-md-3 mt-5">
+        class="row g-4 py-5 row-cols-xxl-3 row-cols-lg-3 justify-content-center gap-5 gap-md-3 ">
         
         <div id="myProjects1" class="card col-4 col-md-12" style="width: 18rem">
           <a href="https://github.com/RepairBoy/Simon-Game" target="_blank"
@@ -260,6 +274,24 @@
 
     </section>
 
+    <section id="myResume">
+      <div class="container my-5">
+        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+          <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+            <h1 class="display-4 fw-bold lh-1 ">Go Through my resume</h1>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+              <a href="https://apricot-alikee-95.tiiny.site/" target="_blank"><button id="resumeDownloadBtn" type="button" class="btn btn-outline-secondary btn-lg px-4">View</button></a>
+              
+            </div>
+          </div>
+          <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+              <a href="https://apricot-alikee-95.tiiny.site/" target="_blank"><img class="rounded-lg-3" src="./images/resumeImagecropped.png" alt="" width="720"></a>
+              
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <h1 id="mmmmm">my stuff</h1> -->
     <footer id="myFooter" class="py-5">
       <div class="row container justify-content-lg-around">
         <div class="col-4 col-md-4 mb-3 ms-5">
@@ -272,16 +304,14 @@
            
           </ul>
         </div>
-  
-        
-  
         <div class="col-6 col-md-6 offset-md-1 mb-3">
           <form>
-            <h5>Send me and Email</h5>
-            <p>Let me know what i can do for you.</p>
-            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+            <h5>Send me an Email</h5>
+            <div class="d-flex flex-column flex-wrap flex-sm-row w-100 gap-2">
+              <input id="newsletter2" type="text" class="form-control w-50" placeholder="Name">
               <label for="newsletter1" class="visually-hidden">Email address</label>
-              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <input id="newsletter1" type="email" class="form-control w-50" placeholder="Email address">
+              <textarea name="" id="contactTextarea" class="w-75 " placeholder="    Message"></textarea>
               <button class="btn btn-dark myFooterButton" type="button">Send</button>
             </div>
           </form>
@@ -291,10 +321,10 @@
       <div class="d-flex flex-column flex-sm-row justify-content-between py-2 my-2 border-top container">
         <p style="text-align: center;" class="">© 2024 Vijin Robinson. All rights reserved.</p>
         <ul class="list-unstyled d-flex footerIcon justify-content-center">
-          <li class="ms-3"><a class="link-body-emphasis" href="https://www.reddit.com/" target="_blank"><img src="./images/square-reddit.svg" alt=""  width="24" height="25" class="bi"></a></li>
-          <li class="ms-3"><a class="link-body-emphasis" href="https://www.instagram.com/" target="_blank"><img src="./images/instagramsvg.svg" alt=""  width="24" height="25" class="bi"></a></li>
-          <li class="ms-3"><a class="link-body-emphasis" href="https://www.facebook.com/" target="_blank"><img src="./images/facebook-fsvg.svg" alt=""  width="24" height="25" class="bi"></a></li>
-          <li class="ms-3"><a class="link-body-emphasis" href="https://github.com/RepairBoy" target="_blank"><img src="./images/githubsvg.svg" alt=""  width="24" height="25" class="bi"></a></li>
+          <li class="ms-2 me-2"><a class="link-body-emphasis" href="https://www.reddit.com/" target="_blank"><img src="./images/square-reddit.svg" alt=""  width="24" height="25" class="bi"></a></li>
+          <li class="ms-2 me-2"><a class="link-body-emphasis" href="https://www.instagram.com/" target="_blank"><img src="./images/instagramsvg.svg" alt=""  width="24" height="25" class="bi"></a></li>
+          <li class="ms-2 me-2"><a class="link-body-emphasis" href="https://www.facebook.com/" target="_blank"><img src="./images/facebook-fsvg.svg" alt=""  width="24" height="25" class="bi"></a></li>
+          <li class="ms-2 me-2"><a class="link-body-emphasis" href="https://github.com/RepairBoy" target="_blank"><img src="./images/githubsvg.svg" alt=""  width="24" height="25" class="bi"></a></li>
           
         </ul>
       </div>

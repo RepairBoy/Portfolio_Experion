@@ -109,7 +109,30 @@ const observer3 = new IntersectionObserver(entries =>{
 
 observer3.observe(myTarget3);
 
+// bannerani
+// const myTarget4 = document.getElementById("myImageDiv")
+// const observer4 = new IntersectionObserver(entries =>{
+//     entries.forEach(entry =>{
+//         entry.target.classList.toggle("myImageDiv", entry.isIntersecting)
+//     })
+// },
+// {
+//     threshold: 0.1
+// })
 
+// observer4.observe(myTarget4);
+
+// const downloadBtn = document.getElementById('resumeDownloadBtn');
+
+// downloadBtn.addEventListener('click', () => {
+//     const pdfUrl = 'https://apricot-alikee-95.tiiny.site/'; // Replace with the actual URL of your PDF file
+//     const link = document.createElement('a');
+//     link.href = pdfUrl;
+//     link.download = 'yourfile.pdf'; // The name for the downloaded file
+//     document.body.appendChild(link);
+//     link.click();
+//     document.body.removeChild(link);
+// });
 
 
 

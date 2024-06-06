@@ -6,16 +6,23 @@
 html {
   box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap'); */
 
 body{
     background-color: #34353A;
-    font-family: "Poppins", sans-serif;
+    font-family: "Teko", sans-serif;
     color: #DAD3BE;
+}
+#mmmmm{
+  font-family: "Teko", sans-serif;
 }
 .nav-link, .navbar-brand{
     color: #DAD3BE;
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Kanit", sans-serif; */
+    font-family: "Teko", sans-serif;
+    font-size: 25px;
 }
 .navbar-toggler{
     background-color: #DAD3BE;
@@ -26,14 +33,29 @@ body{
 #myBanner img{
   border-radius: 50%;
   background-color: #DB9E34;
-  animation: sway 3s infinite ease-in-out;
+ 
+  
+  /* animation: sway 3s infinite ease-in-out; */
+}
+
+#myImageDiv{
+  animation: moveUp 3s ease;
+}
+#myAboutDiv{
+  animation: moveDown 3s ease;
 }
 #myBanner h1{
   color: #DB9E34;
   font-weight: bold;
   font-size: 50px;
+  /* font-family: "Kanit", sans-serif; */
+  font-family: "Teko", sans-serif;
+}
+#myBanner p{
+  font-size: 20px;
 }
 #skills h1, #myProjects h1{
+  color: #DB9E34;
   font-weight: bold;
 }
 @media (max-width:700px){
@@ -41,14 +63,27 @@ body{
     width: 300px;
   }
 }
-@keyframes sway {
-  0%,100%{
-      transform: translateY(0);
+@keyframes moveUp {
+  0%{
+    transform: translateY(-100px);
+    opacity: 0%;
   }
-  50%{
-      transform: translateY(-10px);
+  100%{
+    transform: translateY(0px);
+    opacity: 100%;
   }
 }
+@keyframes moveDown {
+  0%{
+    transform: translateY(100px);
+    opacity: 0%;
+  }
+  100%{
+    transform: translateY(0px);
+    opacity: 100%;
+  }
+}
+
 #myBanner{
   text-align: center;
 }
@@ -56,6 +91,12 @@ body{
   border: none;
   background-color: #DAD3BE;
 }
+/* .card-text {
+  color:  #DB9E34;
+}
+.card-title{
+  color:  #DB9E34;
+} */
 #myProjectsTop h5,#myProjectsBase h5{
   font-weight: bold;
 }
@@ -157,6 +198,8 @@ svg{
 .myFooterButton{
   background-color: #DAD3BE;
   color: black;
+  min-width: 100px;
+  max-height: 50px;
 }
 .myFooterButton:hover{
   background-color: #DB9E34;
@@ -164,3 +207,72 @@ svg{
 .footerNav li a:hover{
   color: #DB9E34;
 }
+#myResume h1{
+  color: #DB9E34;
+}
+#contactTextarea{
+  resize: none;
+  height: 100px;
+  border-radius: 6px;
+}
+#myProjects{
+  margin-top: 100px;
+}
+
+#skillsHeading , #myProjectssHeading{
+  /* border: 1px solid #DAD3BE; */
+  padding: 0;
+  border-radius: 6px;
+  background-color: #2E2F34;
+  box-shadow: 0 0 0 0.5;
+}
+
+#myProjects .card{
+  /* transform: rotate(45deg); */
+  padding-left: 0;
+  padding-right: 0;
+  
+}
+#myFooter h5{
+  font-size: 30px;
+}
+.footerIcon li:hover{
+  scale: 1.2;
+}
+.myNavBarList a:hover{
+  color: #DB9E34;
+  scale: 1.2;
+}
+
+/* #myBanner img{
+  animation: sway 3s infinite ease-in-out;
+}
+@keyframes sway {
+  0%,100%{
+      transform: rotate(-3deg);
+  }
+  50%{
+      transform: rotate(3deg);
+  }
+} */
+
+
+/* #nameSpanO{
+  animation: nameSpan 3s ease;
+}
+@keyframes nameSpan {
+  0%{
+    transform: translateX(20px);
+    transform: translateY(0);
+  }
+  25%{
+    transform: translateX(20px);
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateX(20px);
+  }
+  100%{
+    transform: translateX(20px);
+  }
+} */
