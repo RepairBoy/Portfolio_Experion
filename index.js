@@ -74,7 +74,6 @@ projectImage6.addEventListener("mouseleave", () =>{
 
 // skill1
 const myTarget1 = document.getElementById("svg1CircleClass")
-
 const observer1 = new IntersectionObserver(entries =>{
     entries.forEach(entry =>{
         entry.target.classList.toggle("svg1CircleClass", entry.isIntersecting)
@@ -87,7 +86,6 @@ observer1.observe(myTarget1);
 
 // skill2
 const myTarget2 = document.getElementById("svg2CircleClass")
-
 const observer2 = new IntersectionObserver(entries =>{
     entries.forEach(entry =>{
         entry.target.classList.toggle("svg2CircleClass", entry.isIntersecting)
@@ -100,7 +98,6 @@ observer2.observe(myTarget2);
 
 // skill3
 const myTarget3 = document.getElementById("svg3CircleClass")
-
 const observer3 = new IntersectionObserver(entries =>{
     entries.forEach(entry =>{
         entry.target.classList.toggle("svg3CircleClass", entry.isIntersecting)
@@ -114,28 +111,5 @@ observer3.observe(myTarget3);
 
 
 
-// view
-// document.addEventListener('load', () => {
-// const targetDiv = document.getElementById('progressCircleNumber1');
-
-// const observerOptions = {
-//     root: document.querySelector("#skills"), // Use the viewport as the container
-//     rootMargin: '0px',
-//     threshold: 0.1 // Trigger when at least 10% of the element is visible
-// };
-
-// const observerCallback = (entries, observer) => {
-//     entries.forEach(entry => {
-//         if (entry.isIntersecting) {
-//             targetDiv.style.height = '300px'; // New height when the element is in view
-//         } else {
-//             targetDiv.style.height = '100px'; // Revert height when the element is out of view
-//         }
-//     });
-// };
-
-// const observer = new IntersectionObserver(observerCallback, observerOptions);
-// observer.observe(targetDiv);
-// });
 
 
